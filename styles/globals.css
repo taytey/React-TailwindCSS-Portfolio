@@ -1,9 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
+  background-color: #0e0e0e;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: rgb(226, 226, 226);
 }
 
 a {
@@ -15,12 +21,19 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@font-face{
+  font-family: "Montserrat-Bold";
+  src: url("../public/Montserrat-Bold.ttf");
+  font-family: "Montserrat-Medium";
+  src: url("../public/Montserrat-Medium.ttf");
+  font-family: "Montserrat-Black";
+  src: url("../public/Montserrat-Black.ttf");
+  font-family: "Montserrat-Regular ";
+  src: url("../public/Montserrat-Regular.ttf");
+  font-family: "Montserrat-Thin";
+  src: url("../public/Montserrat-Thin.ttf");
+  font-family: "Montserrat-Light";
+  src: url("../public/Montserrat-Light.ttf");
+  font-family: "MontserratLightItalic";
+  src: url("../public/Montserrat-LightItalic.ttf");
 }

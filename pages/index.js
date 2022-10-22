@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import {BsFillMoonStarsFill} from 'react-icons/bs'
+import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai'
+import tayte from '../public/2.jpg'
 
 export default function Home() {
   return (
@@ -11,59 +14,33 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+      <main className="px-10">
+        <section className="h-screen">
+          <nav className="py-10 mb-12 flex justify-between">
+            <h1 className="text-3xl font-Monsterrat-Bold">Tayte</h1>
+            <ul className="flex items-center">
+              <li>
+                <BsFillMoonStarsFill className="cursor-pointer text-2xl"/>
+              </li>
+              <li><a className="bg-gradient-to-r from-slate-400 via-slate-300 to-slate-400 bg-slate-300 text-black e0e px-4 py-2 rounded border-none ml-8 font-MontserratMedium" href="#">Resume</a></li>
+            </ul>
+          </nav>
+          <div className="text-center p-10 py-10">
+            <h2 className="text-5xl py-2 text-white">Tayte Bitton</h2>
+            <h3 className="text-2xl py-2 font-MonserratLightItalic">Developer and designer.</h3>
+          <p className="text-md py-5 leading-8">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum.
+          </p>
+          </div>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-slate-400">
+            <AiFillTwitterCircle />
+            <AiFillLinkedin />
+          </div>
+          <div className="relative rounded-full w-80 h-80 mt-20">
+            <Image src={tayte}/>
+          </div>
+        </section>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   )
 }
