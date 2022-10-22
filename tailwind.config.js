@@ -7,9 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Montserrat: "Montserrat-Bold",
-        MonserratMedium: "Monsterrat-Medium",
-        MonserratLightItalic: "MontserratLightItalic"
+        JosefinRegular: "JosefinRegular",
+        JosefinItalic: "JosefinItalic"
       }
     },
   },

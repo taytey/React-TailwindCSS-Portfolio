@@ -21,19 +21,11 @@ a {
   box-sizing: border-box;
 }
 
-@font-face{
-  font-family: "Montserrat-Bold";
-  src: url("../public/Montserrat-Bold.ttf");
-  font-family: "Montserrat-Medium";
-  src: url("../public/Montserrat-Medium.ttf");
-  font-family: "Montserrat-Black";
-  src: url("../public/Montserrat-Black.ttf");
-  font-family: "Montserrat-Regular ";
-  src: url("../public/Montserrat-Regular.ttf");
-  font-family: "Montserrat-Thin";
-  src: url("../public/Montserrat-Thin.ttf");
-  font-family: "Montserrat-Light";
-  src: url("../public/Montserrat-Light.ttf");
-  font-family: "MontserratLightItalic";
-  src: url("../public/Montserrat-LightItalic.ttf");
+@font-face {
+  font-family: "JosefinRegular";
+  src: url("../public/JosefinSansRegular.ttf")
+}
+@font-face {
+  font-family: "JosefinItalic";
+  src: url("../public/JosefinSans-Italic.ttf")
 }
