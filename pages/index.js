@@ -2,8 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai'
+import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import tayte from '../public/2.jpg'
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import {Navbar} from '../pages/navbar'
 
 export default function Home() {
   return (
@@ -16,6 +18,7 @@ export default function Home() {
 
       <main className="px-10">
         <section className="h-screen">
+
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-3xl font-Monsterrat-Bold">Tayte</h1>
             <ul className="flex items-center">
@@ -29,15 +32,14 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-white">Tayte Bitton</h2>
             <h3 className="text-2xl py-2 font-MonserratLightItalic">Developer and designer.</h3>
           <p className="text-md py-5 leading-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum.
+            17 year old developer wanting to take my hobbies to a professional level. You are viewing a website created with React.js and Tailwindcss as an example of my work. 
           </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-slate-400">
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
+            <a href="https://github.com/taytey/Portfolio-Website"><AiFillGithub/></a>   
           </div>
           <div className="relative rounded-full w-80 h-80 mt-20">
-            <Image src={tayte}/>
+            
           </div>
         </section>
       </main>
