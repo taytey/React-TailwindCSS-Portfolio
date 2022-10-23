@@ -29,3 +29,11 @@ a {
   font-family: "JosefinItalic";
   src: url("../public/JosefinSans-Italic.ttf")
 }
+@font-face {
+  font-family: "JosefinLight";
+  src: url("../public/Montserrat-Light.ttf");
+}
+@font-face {
+  font-family: "Dafoe";
+  src: url("../public/MrDafoe-Regular.ttf")
+}

@@ -8,7 +8,9 @@ module.exports = {
     extend: {
       fontFamily: {
         JosefinRegular: "JosefinRegular",
-        JosefinItalic: "JosefinItalic"
+        JosefinItalic: "JosefinItalic",
+        JosefinLight: "JosefinLight",
+        Dafoe: "Dafoe",
       }
     },
   },
